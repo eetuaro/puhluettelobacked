@@ -23,7 +23,7 @@ let persons = [
   { id: 5, name: 'Markku', number: '43243242' },
 ];
 
-app.get('/', (request, response) => {
+app.get('/api/persons', (request, response) => {
   response.json(persons);
 });
 
